@@ -1,33 +1,30 @@
 package com.example.project.reactProject.entity;
 
+import java.time.LocalDate;
+
+import lombok.AllArgsConstructor;
+import lombok.Builder;
+import lombok.Getter;
+import lombok.NoArgsConstructor;
+import lombok.Setter;
+import lombok.ToString;
+
+@Getter
+@Setter
+@ToString
+@NoArgsConstructor
+@AllArgsConstructor
+@Builder
 public class User {
 	private String uid;
+	private String pwd;
 	private String uname;
+	private String email;
+	private LocalDate regDate;
+    private boolean isDeleted;
+    private String profile;
+    private String github;
+    private String insta;
+    private String location;
 	
-	public User() { }
-	public User(String uid, String uname) {
-		this.uid = uid;
-		this.uname = uname;
-	}
-	
-	@Override
-	public String toString() {
-		return "User [uid=" + uid + ", uname=" + uname + "]";
-	}
-	
-	public String getUid() {
-		return uid;
-	}
-	public void setUid(String uid) {
-		this.uid = uid;
-	}
-	public String getUname() {
-		return uname;
-	}
-	public void setUname(String uname) {
-		this.uname = uname;
-	}
-	
-	
-
 }

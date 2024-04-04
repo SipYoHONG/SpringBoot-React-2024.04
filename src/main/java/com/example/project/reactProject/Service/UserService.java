@@ -6,13 +6,8 @@ import com.example.project.reactProject.entity.User;
 
 public interface UserService {
 	
-	    List<User> getAllUsers();
+	public static final int COUNT_PER_PAGE = 10;
+	
+	List<User> getUserList(int page);
 	    
-	    User getUserById(Long id);
-	    
-	    User addUser(User user);
-	    
-	    User updateUser(User user);
-	    
-	    void deleteUser(Long id);
-	}
+}

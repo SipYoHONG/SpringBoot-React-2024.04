@@ -19,6 +19,7 @@ function App() {
       .then(res => setUser(res.data))
       .catch(err => console.log(err));
   }, []);
+  
   return (
     <div className="App">
       <header className="App-header">
